@@ -37,6 +37,7 @@ func (list *SinglyLL) IsEmpty() bool{
 func (list *SinglyLL) InsertAtBegining(newnode *Node){
 	if list.IsEmpty(){
 		list.head = newnode
+		return
 	} 
 	temp := list.head
 	list.head = newnode
