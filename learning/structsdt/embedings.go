@@ -33,4 +33,8 @@ func OdersInfo(){
 	}
 
 	fmt.Println(newOrder)
+
+	// changing name
+	newOrder.Customer.name = "Bomkesh"
+	fmt.Println(newOrder)
 }
