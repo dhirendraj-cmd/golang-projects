@@ -7,7 +7,7 @@ type Node struct{
 	next *Node
 }
 
-// constructor
+// node constructor
 func NewNode(data int) *Node {
 	node := Node{
 		data: data,
@@ -32,6 +32,21 @@ func NewSinglyLL() *SinglyLL {
 func (list *SinglyLL) IsEmpty() bool{
 	return list.head == nil
 }
+
+// inseert at begining
+func (list *SinglyLL) InsertAtBegining(newnode *Node){
+	if list.IsEmpty(){
+		list.head = newnode
+	} 
+	temp := list.head
+	list.head = newnode
+	newnode.next = temp
+}
+
+// insert at specific position
+// func (list *SinglyLL) InsertInBetween(newnode *Node) {
+	
+// }
 
 // Insert at End
 func (list *SinglyLL) InsertAtEnd(newnode *Node) {
@@ -89,6 +104,11 @@ func LLops(){
 	node6 := NewNode(6)
 	list.InsertAtEnd(node6)
 
+	list.PrintList()
+
+	fmt.Println()
+	node45 := NewNode(45)
+	list.InsertAtBegining(node45)
 	list.PrintList()
 
 
