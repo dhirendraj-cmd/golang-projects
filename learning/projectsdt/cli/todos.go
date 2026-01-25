@@ -15,7 +15,6 @@ type Todo struct{
 
 var currentID int = 0
 
-
 // todos constructor
 func NewTodo(task string) *Todo{
 
