@@ -36,7 +36,8 @@ func main(){
 	// interfacesdt.Bookshelf()
 
 	// binary tree
-	projectsdt.TreeCall()
+	// projectsdt.TreeCall()
+	projectsdt.GenericCall()
 
 
 	end := time.Since(start)
