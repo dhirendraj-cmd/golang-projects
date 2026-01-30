@@ -22,6 +22,7 @@ func GenerateRandomString(length int) string{
 
 }
 
+// sending channels
 func ProcessMsg(processChan chan string, wg *sync.WaitGroup){
 	defer wg.Done()
 	fmt.Println("Printing Proces msg")
