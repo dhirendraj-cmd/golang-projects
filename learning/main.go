@@ -4,7 +4,9 @@ import (
 	"fmt"
 	// "learning/learning/projectsdt/cli"
 	// "learning/learning/interfacesdt"
-	"learning/learning/projectsdt"
+	// "learning/learning/projectsdt"
+	// "learning/learning/concurrency/goroutines"
+	"learning/learning/concurrency/channels"
 	"time"
 )
 
@@ -37,7 +39,13 @@ func main(){
 
 	// binary tree
 	// projectsdt.TreeCall()
-	projectsdt.GenericCall()
+	// projectsdt.GenericCall()
+
+	// Concurrency
+	// goroutines.CallTask1()
+
+	// channels.DeadLockChan()
+	channels.CallMsg()
 
 
 	end := time.Since(start)
