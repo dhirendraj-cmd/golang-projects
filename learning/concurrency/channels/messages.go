@@ -16,10 +16,8 @@ func GenerateRandomString(length int) string{
 
 	for i:= range length{
 		randString[i] = charset[rand.Intn(len(charset))]
-		// fmt.Println("RAND>>>> ", string(randString))
 	}
 
-	// fmt.Println(string(randString))
 	return string(randString)
 
 }
@@ -41,7 +39,6 @@ func CallMsg(){
 	// go ProcessMsg(processChan, &wg) // Start the Receiver First
 	// processChan <- "Learning Golang channels!!"
 
-	// GenerateRandomString(5)
 	
 	for range 100 {
 		wg.Add(1)
